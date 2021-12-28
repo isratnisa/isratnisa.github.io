@@ -13,20 +13,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
   width: 20%;
-  height: 500px; /* only for demonstration, should be removed */
+  height: 450px; /* only for demonstration, should be removed */
   background-color: #d6eaf8;
   font-size: 15px;
   padding: 20px;
@@ -44,7 +35,7 @@ article {
   background-color: #EBF5FB;
   font-size: 15px;
   padding: 20px;
-  height: 500px; /* only for demonstration, should be removed */
+  height: 450px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -81,7 +72,6 @@ section::after {
 </head>
 <body>
 
-
 <section>
   <nav>
     <ul>
@@ -111,6 +101,7 @@ section::after {
       <p> Fast and memory-efficient message passing primitives for training Graph Neural Networks. Scale to giant graphs via multi-GPU acceleration and distributed training infrastructure. </p>
        <a href="https://github.com/dmlc/dgl">Github repository</a>  
     </div>
+    <br>
     <div class="sub-heading">
     	<h3> Optimization of Sparse N-D Tensor Kernels </h3>
     	<p> Tensors are used to represent high dimensional data. For
@@ -124,6 +115,7 @@ sparse regions of a tensor.  </p>
       <li> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=dfsJMOYAAAAJ&sortby=pubdate&alert_preview_top_rm=2&citation_for_view=dfsJMOYAAAAJ:WF5omc3nYNoC">Paper on SC'2019</a> </li>
       <li> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=dfsJMOYAAAAJ&sortby=pubdate&alert_preview_top_rm=2&citation_for_view=dfsJMOYAAAAJ:LkGwnXOMwfcC">Paper on IPDPS'2019</a> </li>
     </div>
+    <br>
     <div class="sub-heading">
 	<h3> Optimization of Sparse 2D Matrix Kernels </h3>
       <p> Sparse Matrix-Vector (SpMV), Sparse Matrix-Multivector (SpMM), Sparse Matrix-Dense Matrix (SDDMM) products are key kernels for computational science and data science. While GPUs offer significantly higher peak performance and memory bandwidth than multicore CPUs, achieving high performance on sparse computations on GPUs is very challenging. We present an in-depth analysis and develop a new sparse-matrix representation and computation approach suited to achieving high data-movement efficiency and effective GPU parallelization. </p>
@@ -137,5 +129,3 @@ sparse regions of a tensor.  </p>
 
 </body>
 </html>
-
-
