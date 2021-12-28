@@ -52,12 +52,20 @@ section::after {
   clear: both;
 }
 
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
+.heading {
+  background-color: #d6eaf8;
+  text-align: left;
+  color: black
+  font-size: 15px;
+  padding: 20px;
+}
+
+.sub-heading {
+  background-color: #EBF5FB  ;
+  text-align: middle;
+  color: #505050;
+  font-size: 15px;
+  padding: 20px;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -91,7 +99,39 @@ footer {
   </article>
 </section>
 
+<br>
 
+<section>
+  <div class="heading">
+    <h1 style="text-align: center"; >Projects</h1>
+    <div class="sub-heading">
+      <h3> DGL </h3>
+      <p> Fast and memory-efficient message passing primitives for training Graph Neural Networks. Scale to giant graphs via multi-GPU acceleration and distributed training infrastructure. </p>
+       <a href="https://github.com/dmlc/dgl">Github repository</a>  
+    </div>
+    <div class="sub-heading">
+    	<h3> Optimization of Sparse N-D Tensor Kernels </h3>
+    	<p> Tensors are used to represent high dimensional data. For
+example, the attributes of an email conversation (subject,
+author and time) can be represented by the use of a tensor
+or a 3-way array. Real world sparse tensors are extremely large, often follow power-law distribution, and are extremely sparse. Canonical Polyadic Decomposition (CPD) is one of the most common tensor factorization techniques, applicable to both dense and sparse tensors, and MTTKRP (multiplying a sparse matricized tensor by Khatri-Rao product), a key kernel, is a common bottleneck for CPD. We propose multiple new data structures to address 1) The fundamental difference between the parallel structure of threads in GPUs versus multicore CPUs, necessitating attention to load-balancing at both levels (between warps in a thread block
+and thread blocks in a grid);  the diversity of the nonzero
+distribution patterns in a sparse tensor, with different representations being beneficial for ultra-sparse versus moderately
+sparse regions of a tensor.  </p>
+      <li> <a href="https://github.com/isratnisa/B-CSF">Github repository</a> </li>
+      <li> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=dfsJMOYAAAAJ&sortby=pubdate&alert_preview_top_rm=2&citation_for_view=dfsJMOYAAAAJ:WF5omc3nYNoC">Paper on SC'2019</a> </li>
+      <li> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=dfsJMOYAAAAJ&sortby=pubdate&alert_preview_top_rm=2&citation_for_view=dfsJMOYAAAAJ:LkGwnXOMwfcC">Paper on IPDPS'2019</a> </li>
+    </div>
+    <div class="sub-heading">
+	<h3> Optimization of Sparse 2D Matrix Kernels </h3>
+      <p> Sparse Matrix-Vector (SpMV), Sparse Matrix-Multivector (SpMM), Sparse Matrix-Dense Matrix (SDDMM) products are key kernels for computational science and data science. While GPUs offer significantly higher peak performance and memory bandwidth than multicore CPUs, achieving high performance on sparse computations on GPUs is very challenging. We present an in-depth analysis and develop a new sparse-matrix representation and computation approach suited to achieving high data-movement efficiency and effective GPU parallelization. </p>
+       <li> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=dfsJMOYAAAAJ&sortby=pubdate&alert_preview_top_rm=2&citation_for_view=dfsJMOYAAAAJ:Y0pCki6q_DkC">Paper on PPoPP'2019</a> </li>
+       <li> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=dfsJMOYAAAAJ&sortby=pubdate&alert_preview_top_rm=2&citation_for_view=dfsJMOYAAAAJ:Tyk-4Ss8FVUC">Paper on HiPC'2018</a>  </li>   
+       <li> More reference papers can be found in the publication section </li>
+    </div>
+  </div>
+</section>
+  
 
 </body>
 </html>
