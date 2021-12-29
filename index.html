@@ -13,31 +13,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 25%;
-  height: 450px; /* only for demonstration, should be removed */
-  background-color: #d6eaf8;
-  font-size: 15px;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  width: 75%;
-  background-color: #EBF5FB;
-  font-size: 15px;
-  padding: 20px;
-  height: 450px; /* only for demonstration, should be removed */
-}
-
 /* Clear floats after the columns */
 section::after {
   content: "";
@@ -60,44 +35,35 @@ section::after {
   font-size: 15px;
   padding: 20px;
 }
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
 </style>
 </head>
 <body>
 
+	
 <section>
-  <nav>
-    <ul>
-      <img src="Israt.jpg" alt="Israt Nisa" width=100% height=auto class="center">
-      <li> </li>
-      <br>
-      <li><a href = "mailto: isratnisa295@gmail.com">My Email</a><li>	
-      <li><a href = "https://scholar.google.com/citations?hl=en&user=dfsJMOYAAAAJ">Google Scholar</a></li>
-      <li><a href = "https://www.linkedin.com/in/israt-nisa-30686883/">LinkedIn</a><li>
+  <div class="row">
+  	<div class="column left" style="background-color:#d6eaf8;">
+        	<img src="Israt.jpg" alt="Israt Nisa" width=100% height=auto class="center">
+        	<br> <br>
+        	<li><a href = "mailto: isratnisa295@gmail.com"> My Email </a><li>	
+        	<li><a href = "https://scholar.google.com/citations?hl=en&user=dfsJMOYAAAAJ"> Google Scholar </a></li>
+        	<li><a href = "https://www.linkedin.com/in/israt-nisa-30686883/"> LinkedIn </a><li>
+        </div>
+        <div class="column right" style="background-color:#EBF5FB;">
+        	<h1>About me</h1>
+        	<p> I am an applied scientist at AWS AI. I work in the Deep Graph Library - <a href = "https://www.dgl.ai/"> DGL </a> team where we find new solutions for scalable Graph Neural Network on heterogeneous architectures.</p> 
+        	<p> I was a postdoctoral scholar at Berkeley Lab and have worked on exascale solution for microbiome analysis and dynamic runtime fusion of parallel operators. I did my PhD at the Ohio State University in CSE under the supervision of Prof. P.(Saday) Sadayappan and a core supporter of the very best Buckeye football team. My research specialty lies in high-performance computing - primarily optimizing bandwidth-bound, load imbalanced sparse kernels for massively parallel architectures like GPUs and multi-core CPUs. I earned my undergrad in Computer Science & Engineering from the University of Dhaka, Dhaka, Bangladesh.</p>
+        </div>
+  </div>
+</section>
+
 <!-- 
       <li><a href = "mailto: neesha295@gmail.com"> <img src="email_logo.jpg" alt="email_logo" width=15% height=auto> </a><li>	
       <li><a href = "https://scholar.google.com/citations?hl=en&user=dfsJMOYAAAAJ"> <img src="google-scholar.jpg" alt="shoclar_logo" width=15% height=auto> </a></li>
       <li><a href = "https://www.linkedin.com/in/israt-nisa-30686883/"> <img src="google-scholar.jpg" alt="LinkedIn-logo" width=15% height=auto> </a><li>
       <li><a href = "https://github.com/isratnisa"> <img src="GitHub-logo.jpg" alt="git-logo" width=15% height=auto> </a><li>
 -->  
-    <li>  </li>
-    </ul>
-  </nav>
   
-  <article>
-    <h1>About me</h1>
-    <p> I am an applied scientist at AWS AI. I work on scalable Graph Neural Network models for machine learning algorithm. My team develops the Deep Graph Library - <a href = "https://www.dgl.ai/"> DGL </a>.</p> 
-    <p> I was a postdoctoral scholar at Berkeley Lab and have worked on exascale solution for microbiome analysis and dynamic runtime fusion of parallel operators. I did my PhD at the Ohio State University in CSE under the supervision of Prof. P.(Saday) Sadayappan and a core supporter of the very best Buckeye football team. My research specialty lies in high-performance computing - primarily optimizing bandwidth-bound, load imbalanced sparse kernels for massively parallel architectures like GPUs and multi-core CPUs. I earned my undergrad in Computer Science & Engineering from the University of Dhaka, Dhaka, Bangladesh.</p>
-  </article>
-</section>
-
 <br>
 
 <section>
