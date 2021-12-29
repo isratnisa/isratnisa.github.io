@@ -13,6 +13,32 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Create two uneleftqual columns that floats next to each other */
+.column {
+  float: left;
+  padding: 20px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.right {
+  width: 75%;
+  font-size: 15px;
+  padding: 20px;
+  
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
 /* Clear floats after the columns */
 section::after {
   content: "";
