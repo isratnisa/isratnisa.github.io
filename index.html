@@ -28,9 +28,19 @@
       padding: 20px;
     }
 
+    .content-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+    }
+
     .about-me {
-      width: 60%;
+      width: 65%;
       padding: 20px;
+    }
+    .about-me li {
+      margin-bottom: 10px;
     }
 
     .profile-image {
@@ -42,7 +52,6 @@
       width: 100%;
       height: auto;
     }
-
     .links {
       position: absolute;
       bottom: 10px;
@@ -76,10 +85,32 @@
       color: white;
       text-decoration: none;
       margin-right: 20px;
+      margin-top: 20px;
+    }
+
+    /* New styles for the latest news */
+    .latest-news {
+      width: 40%;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .latest-news h2 {
+      color: #333;
+    }
+
+    .latest-news ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .latest-news li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
+
 
 <header>
   <nav>
@@ -95,7 +126,6 @@
   <div class="profile-image">
     <img src="Israt.jpg" alt="Israt Nisa">
   </div>
-
   <div class="about-me">
     <h1>About Me</h1>
     <p>
@@ -104,8 +134,15 @@
     <p>
 			Before joining AWS, I was a postdoctoral scholar at <a href="https://www.lbl.gov/">Berkeley Lab</a>  around 2020, where I worked on exascale solutions for microbiome analysis and dynamic runtime fusion of parallel operators. In 2019, I completed my Ph.D. at the Ohio State University (a core supporter of our very best Buckeye football team) in CSE under the guidance of <a href="https://users.cs.utah.edu/~saday/">Prof. P. (Saday) Sadayappan</a>. My research expertise lies in high-performance computing. Specifically, I specialize in optimizing bandwidth-bound, load-imbalanced sparse kernels for massively parallel architectures such as GPUs and multi-core CPUs. I earned my undergraduate degree in Computer Science & Engineering from the <a href="https://www.du.ac.bd/">University of Dhaka</a>, Dhaka, Bangladesh.
     </p>
+    <h1>Latest News</h1>
+      <ul>
+      <li><strong>Nov 2023:</strong> Served as a session chair at SC'23 for Training Graph Neural Networks session</li>
+      <li><strong>Sep 2023:</strong> Invited talk at ICIAM'23</li>
+      <!-- Add more news items as needed -->
+    </ul>
   </div>
 </section>
+
 
 <footer>
   <p>&copy; 2023 Israt Nisa</p>
