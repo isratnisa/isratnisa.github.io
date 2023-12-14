@@ -39,8 +39,10 @@
       width: 65%;
       padding: 20px;
     }
-    .about-me li {
+    .about-me p {
       margin-bottom: 10px;
+      margin-right: 35px;
+      text-align:  justify;
     }
 
     .profile-image {
@@ -52,6 +54,7 @@
       width: 100%;
       height: auto;
     }
+
     .links {
       position: absolute;
       bottom: 10px;
@@ -81,7 +84,7 @@
       width: 100%;
     }
 
-    a.projects, a.publications, a.google-scholar {
+    a.projects, a.publications, a.google-scholar, a.CV {
       color: white;
       text-decoration: none;
       margin-right: 20px;
@@ -93,6 +96,7 @@
       width: 40%;
       padding: 20px;
       background-color: #f9f9f9;
+      margin-right: 35px;
     }
 
     .latest-news h2 {
@@ -102,10 +106,18 @@
     .latest-news ul {
       list-style-type: none;
       padding: 0;
+      margin-right: 35px;
     }
 
     .latest-news li {
       margin-bottom: 10px;
+      margin-right: 35px;
+      text-align:  justify;
+    }
+    .latest-news p {
+      margin-bottom: 10px;
+      margin-right: 35px;
+      text-align:  justify;
     }
   </style>
 </head>
@@ -118,6 +130,7 @@
     	<li style="display: inline;"><a class="google-scholar" href="https://scholar.google.com/citations?hl=en&user=dfsJMOYAAAAJ">Google Scholar</a></li>
       <li style="display: inline;"><a class="projects" href="projects.html">Projects</a></li>
       <li style="display: inline;"><a class="publications" href="publications.html">Publications</a></li>
+      <li style="display: inline;"><a class="CV" href="CV.pdf">CV</a></li>
     </ul>
   </nav>
 </header>
@@ -125,6 +138,8 @@
 <section>
   <div class="profile-image">
     <img src="Israt.jpg" alt="Israt Nisa">
+<!--     <div class="profile-name">Your Name</div> -->
+  </div>
   </div>
   <div class="about-me">
     <h1>About Me</h1>
@@ -136,8 +151,11 @@
     </p>
     <h1>Latest News</h1>
       <ul>
-      <li><strong>Nov 2023:</strong> Served as a session chair at SC'23 for Training Graph Neural Networks session</li>
-      <li><strong>Sep 2023:</strong> Invited talk at ICIAM'23</li>
+      <li><strong>Feb 2024:</strong> Upcoming invited talk at SIAM PP'24, Baltimore, MA.</li>
+      <li><strong>Nov 2023:</strong> Served at SC'23 as a session chair at Training Graph Neural Networks session.</li>
+      <li><strong>Sep 2023:</strong> Invited talk at ICIAM'23 (virtual).</li>
+      <li><strong>May 2023:</strong> Presented <a href="https://assets.amazon.science/62/5c/ba110eab4fd88d34b2b3fb3b3bf9/optimizing-irregular-dense-operators-of-heterogeneous-gnn-models-on-gpu.pdf">paper</a> at IPDPSW'23 on irregular dense operators in GNN models. </li>
+
       <!-- Add more news items as needed -->
     </ul>
   </div>
